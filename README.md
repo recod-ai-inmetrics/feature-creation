@@ -12,7 +12,7 @@ myChat = Chat(pipeline = yourHugginFacePipeline, useHistory = boolean, role = ro
 question = 'Your question here'
 answer = myChat.ask(query = question)
 print(answer) // your answer
-'''
+
 * CodeRAG: creates an agent that takes search queries and a question. Given the search queries, it will search for useful context and answer you based on the context. Here's an example:
 '''python
 repo_path = 'link to a github repository that will be used to search for context. The repository will be cloned to a path specified by the user'
@@ -34,5 +34,3 @@ ragAgent = CodeRAG(
 
 question = 'your question'
 searchQueries = 'list of your search queries'
-
-'''

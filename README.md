@@ -34,4 +34,8 @@ ragAgent = CodeRAG(
 
 question = 'your question'
 searchQueries = 'list of your search queries'
+result = ragAgent..ask(query = question, searchQueries = searchQueries, useContext = bool)
+# if you wanna do rag, useContext must be True. Otherwise, False.
+
+response, context = result['response'], result['context']
 ```
